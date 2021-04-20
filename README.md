@@ -1,11 +1,29 @@
-## My Project
+# amazon-guardduty-cloudwatch-frequency-script
 
-TODO: Fill this README out!
+This script automates the process of updating the GuardDuty CloudWatch Event publishing frequency across all GuardDuty capable regions in a GuardDuty administrator account.
 
-Be sure to:
+## Prerequisites
 
-* Change the title in this README
-* Edit your repository description on GitHub
+* This script requires permissions to make changes in the Guardduty administrator account. 
+
+* An environment capable of executing this script is required. That can be an EC2 instance or locally.
+
+### Execute Scripts
+
+```
+usage: amazon-guardduty-threatintellist-script.py [-h] --administrator_account ADMINISTATOR_ACCOUNT --assume_role ASSUME_ROLE --threatlist_location THREATLIST_LOCATION --list_name LIST_NAME --list_format LIST_FORMAT
+
+Create a threat intel list for all enabled GuardDuty regions
+
+arguments:
+  -h, --help            show this help message and exit
+  --administrator_account ADMINISTRATOR_ACCOUNT
+                        AccountId for Central AWS Account
+  --assume_role ASSUME_ROLE
+                        Role name of role to use
+  --desired_frequency DESIRED_FREQUENCY
+                        Frequency to set for CloudWatch Event exporting. Accetaple inputs = FIFTEEN_MINUTES, ONE_HOUR, SIX_HOURS. If not specified, 15 minutes will be selected
+```
 
 ## Security
 
