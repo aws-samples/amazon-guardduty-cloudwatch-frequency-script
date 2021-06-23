@@ -11,9 +11,9 @@ This script automates the process of updating the GuardDuty CloudWatch Event pub
 ### Execute Scripts
 
 ```
-usage: amazon-guardduty-threatintellist-script.py [-h] --administrator_account ADMINISTATOR_ACCOUNT --assume_role ASSUME_ROLE --threatlist_location THREATLIST_LOCATION --list_name LIST_NAME --list_format LIST_FORMAT
+usage: amazon-guardduty-cloudwatch-frequency-script.py [-h] --administrator_account ADMINISTATOR_ACCOUNT --assume_role ASSUME_ROLE --desired_frequency DESIRED_FREQUENCY
 
-Create a threat intel list for all enabled GuardDuty regions
+Change the frequency for when GuardDuty delivers to Cloudwatch
 
 arguments:
   -h, --help            show this help message and exit
